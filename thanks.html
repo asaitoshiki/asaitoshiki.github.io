@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>ご購入ありがとうございます — MixedSub</title>
+<meta name="description" content="MixedSub Pro のライセンスキーを拡張機能へ登録する手順。">
+<style>
+  :root {
+    --ink: #17181c;
+    --sub: #6b6f76;
+    --line: #e6e7ea;
+    --paper: #fbfbfa;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    padding: 0 24px;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 16px/1.85 "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    font-feature-settings: "palt";
+    /* 日本語は折ってよい位置に空白が入る。そこでだけ折る。 */
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  main { max-width: 620px; margin: 0 auto; padding: 120px 0; }
+
+  h1 { margin: 0; font-size: 21px; font-weight: 600; letter-spacing: 0.04em; }
+
+  .tagline { margin: 4px 0 56px; color: var(--sub); font-size: 15px; }
+
+  h2 {
+    margin: 0 0 22px;
+    color: var(--sub);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+  }
+
+  section { margin: 0 0 76px; }
+
+  p { margin: 0 0 18px; }
+  p:last-child { margin-bottom: 0; }
+
+  a { color: var(--ink); text-decoration-color: var(--line); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--ink); }
+
+  /* 手順は迷わせないことがすべて。番号を振って 1 行ずつ置く。 */
+  .steps { margin: 0; padding: 0; list-style: none; counter-reset: step; }
+  .steps li {
+    position: relative;
+    padding: 14px 0 14px 34px;
+    border-top: 1px solid var(--line);
+    counter-increment: step;
+  }
+  .steps li:last-child { border-bottom: 1px solid var(--line); }
+  .steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    color: var(--sub);
+    font-size: 13px;
+  }
+  .steps b { display: block; font-weight: 600; }
+  .steps span { color: var(--sub); font-size: 14px; }
+
+  .note { color: var(--sub); font-size: 14px; }
+
+  footer { margin-top: 96px; padding-top: 28px; border-top: 1px solid var(--line); color: var(--sub); font-size: 13px; }
+
+  @media (max-width: 560px) {
+    main { padding: 72px 0 80px; }
+    section { margin-bottom: 56px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>ありがとうございます</h1>
+<p class="tagline">MixedSub Pro のお支払いが完了しました。</p>
+
+<section>
+  <h2>ライセンスキーの登録</h2>
+  <ul class="steps">
+    <li>
+      <b>メールでライセンスキーを受け取る</b>
+      <span>ご購入のメールアドレス宛に届きます。数分たっても見当たらない場合は迷惑メールもご確認ください。</span>
+    </li>
+    <li>
+      <b>拡張機能の設定画面を開く</b>
+      <span>ツールバーの MixedSub アイコンを右クリックし、「オプション」を選びます。</span>
+    </li>
+    <li>
+      <b>キーを貼り付けて登録する</b>
+      <span>「ライセンス」の欄に貼り、登録を押します。接続の許可を一度だけ確認されます。</span>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>登録のあとに</h2>
+  <p>
+    Pro の機能（比率の 1% 刻み、文の難しさによる言語の選択、覚えた / まだ の管理、保存と練習の無制限、Anki への書き出し）がその場で開きます。再起動は要りません。
+  </p>
+  <p class="note">
+    別の端末でも同じキーを登録すれば使えます。端末を使わなくなったときは、その端末の設定画面でキーを外してください。登録の枠が戻ります。
+  </p>
+</section>
+
+<section>
+  <h2>うまくいかないとき</h2>
+  <p>
+    <a href="mailto:mixed.subt@gmail.com">mixed.subt@gmail.com</a> までご連絡ください。ご購入時のメールアドレスを添えていただけると早く確認できます。
+  </p>
+</section>
+
+<footer>
+  <a href="/">MixedSub について</a> ・ <a href="/#tokushoho">特定商取引法に基づく表記</a>
+</footer>
+
+</main>
+</body>
+</html>
